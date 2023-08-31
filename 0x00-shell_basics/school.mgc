@@ -1,2 +1,2 @@
 #!/bin/bash
-!:mime school
+echo "0 string SCHOOL" > school.magic; file -m school.magic "$1"; rm school.magic
