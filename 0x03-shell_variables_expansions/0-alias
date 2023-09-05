@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "This is line 1" | cat - <(echo "This is line 2")
+echo "file1" | cat - <(echo "file2")
