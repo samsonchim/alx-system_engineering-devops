@@ -1,2 +1,2 @@
 #!/bin/bash
-(set -o posix; set) | less
+(set; declare -F) > variables_and_functions.txt && cat variables_and_functions.txt
