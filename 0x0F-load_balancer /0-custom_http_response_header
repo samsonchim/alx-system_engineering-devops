@@ -5,7 +5,7 @@
 # uncomment to see the script run in action
 #set -x
 
-echo -e "Just hold on, Samson Chi is doing some magic...\n"
+echo -e "Updating and doing some minor checks...\n"
 
 function install() {
 	command -v "$1" &> /dev/null
@@ -23,7 +23,7 @@ function install() {
 
 install nginx #install nginx
 
-echo -e "\nTricking you.\n"
+echo -e "\nSetting up some minor stuff.\n"
 
 # allowing nginx on firewall
 sudo ufw allow 'Nginx HTTP'
