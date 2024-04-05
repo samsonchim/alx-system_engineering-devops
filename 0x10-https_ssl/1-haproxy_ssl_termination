@@ -47,5 +47,5 @@ frontend clickviral-frontend-https
 
 backend clickviral-backend
         balance roundrobin
-	server 338754-web-01 52.201.167.56:80 check
-	server 338754-web-02 54.160.108.241:80 check
+	server 338754-web-01 52.201.167:80 check
+        server 338754-web-02 54.160.108.241:80 check
