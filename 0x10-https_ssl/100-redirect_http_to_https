@@ -34,16 +34,12 @@ defaults
         errorfile 504 /etc/haproxy/errors/504.http
 
 
-frontend clickviral-frontend-https
+frontend samsonchi-frontend-https
         bind *:443 ssl crt /etc/haproxy/certs/www.samsonchi.tech.pem
         http-request set-header X-Forwarded-Proto https
-        default_backend clickviral-backend
+        default_backend samsonchi-tech-backend
 
-backend clickviral-backend
-        balance roundrobin
-        server 338754-web-01 52.201.167:80 check
-        server 338754-web-02 54.160.108.241:80 check
-
-
-#       server 338754-web-01 52.201.167.56:80 check
-#       server 338754-web-02 54.160.108.241:80 check
+backend samsonchi-tech-backend
+    balance roundrobin
+    server 338754-web-01 52.201.167.56:80 check
+    server 338754-web-02 18.235.249.236:80 check
