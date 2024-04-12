@@ -1,0 +1,22 @@
+What happens when you type https://www.google.com in your browser and press Enter
+
+When you enter “https://www.google.com" in the address bar and press Enter, a series of important actions happen in the background. These include things like DNS requests and database searches, all of which are essential for showing the Google homepage on your screen. Let’s break down each step of this process to understand it better.
+
+DNS Request: First of, your browser starts by translating the human-readable domain name “www.google.com" into an IP address, which is essential for establishing a connection with the server. It sends a Domain Name System (DNS) request to a DNS server, which then responds with the corresponding IP address, such as 172.217.164.196.
+
+With the IP address in hand, your browser starts a Transmission Control Protocol (TCP) connection with Google’s server using the Internet Protocol (IP). TCP guarantees that data packets are delivered reliably, in the correct order, and are checked for errors as they travel between your computer and the server. This helps ensure a smooth and dependable exchange of information between the two devices.
+
+Prior to establishing the connection, it might traverse through a firewall, which is a network security mechanism created to supervise and regulate incoming and outgoing traffic according to predefined security regulations. The firewall’s role is to verify that only genuine traffic is permitted to reach the server, thus safeguarding against unauthorized entry and malicious assaults.
+
+As the connection is established, your browser and the server negotiate a secure communication channel using the Hypertext Transfer Protocol Secure (HTTPS) protocol, which encrypts data transmitted between them. This encryption is facilitated by Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocols, ensuring that your interactions with Google remain private and secure.
+
+Many platforms, including Google, frequently utilize load balancers to distribute incoming traffic among numerous servers, enhancing performance and preventing any individual server from becoming overwhelmed. Load balancers oversee the health of servers and allocate requests based on factors such as server capacity and current workload, thereby guaranteeing a seamless and efficient user experience.
+
+Once the connection is established and encrypted, your browser sends an HTTP request to Google’s web server. This server, which could be running Google’s proprietary software or open-source solutions like Apache or Nginx, processes the request and generates a response.
+
+In the background, Google’s application servers manage more intricate responsibilities, such as running search algorithms, customizing search results, and delivering dynamic content. These servers operate the applications that handle the features you engage with on the Google homepage.
+
+To provide personalized search results and other dynamic content, Google’s application servers may need to retrieve data from databases. These databases store vast amounts of information, ranging from indexed web pages to user preferences, and are accessed as needed to fulfill user requests.
+
+Going from typing “https://www.google.com" to viewing the Google homepage involves a well-coordinated mix of technologies and procedures. Every step, from DNS resolution to database queries, is vital for providing a smooth and safe browsing experience. Knowing about this process gives us a glimpse into the intricacy and advancement of today’s web infrastructure, which drives our daily use of the internet.
+
